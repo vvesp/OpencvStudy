@@ -1,0 +1,17 @@
+import pandas as pd
+# df = pd.read_csv('C:\\Users\\IT\\PycharmProjects\\BasicPython\\venv\\Include\\CSV\\pokemon_data.csv')
+# df_x = pd.read_excel('C:\\Users\\IT\\PycharmProjects\\BasicPython\\venv\\Include\\CSV\\pokemon_data.xlsx')
+# print(df_x.head(3))
+# print(df.head(3))
+df = pd.read_csv('.\\CSV\\pokemon_data.csv')
+# print(df.columns)
+# print(df['Name'][0:5])
+# print(df.Name[0:5])
+# print(df[['Name','Type 1','HP']])
+# print(df.iloc[1:4])
+# for index, row in df.iterrows():
+#     print(index, row['Name'])
+# print(df.loc[df['Type 1']=="Fire"])
+# print(df.describe())
+print(df.sort_values('Name',ascending=False))
+print(df.sort_values(['Type 1', 'HP']))
